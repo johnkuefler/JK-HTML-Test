@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="mortgage-calculator">
+      <form>
+        <label for="loan-amount">Loan Amount:</label>
+        <input type="text" id="loan-amount" placeholder="$" />
+        <br />
+        <label for="interest-rate">Interest Rate:</label>
+        <input type="text" id="interest-rate" placeholder="%" />
+        <br />
+        <label for="loan-term">Loan Term:</label>
+        <input type="text" id="loan-term" placeholder="years" />
+        <br />
+        <button type="button" onclick="calculateMortgage()">Calculate</button>
+      </form>
+      <br />
+      <div id="output"></div>
+    </div>
+  </body>
+</html>
